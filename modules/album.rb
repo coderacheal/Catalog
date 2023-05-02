@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/ParameterLists
 require_relative './item'
-class MusicAlbum < Item
+class Album < Item
   attr_accessor :on_spotify
 
   def initialize(id, genre, author, source, label, published_date,
