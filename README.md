@@ -1,11 +1,11 @@
-# Catalog
+# Catalog Project
 <a name="readme-top"></a>
 
 
 <div align="center">
   <br/>
 
-  <h3><b>Catalog</b></h3>
+  <h3><b>Catalog.</b></h3>
 
 </div>
 
