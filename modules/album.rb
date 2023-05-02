@@ -1,17 +1,16 @@
-require_relative './item'
+require_relative 'item'
+
 class MusicAlbum < Item
   attr_accessor :on_spotify
 
-  def initialize(id, genre, author, source, label, published_date,
-                 on_spotify)
-    super(id, genre, author, source, label, published_date)
+  def initialize(publish_date, on_spotify)
+    super(publish_date)
     @on_spotify = on_spotify
   end
 
-  def can_be_archived?
-    return true if super && @on_spotify == true
+  private
 
-    false
+  def can_be_archived?
+    super && @on_spotify
   end
 end
-# rubocop:enable Metrics/ParameterLists
