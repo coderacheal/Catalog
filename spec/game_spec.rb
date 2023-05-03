@@ -1,37 +1,19 @@
-require_relative './spec_helper'
+require_relative 'spec_helper'
 
 describe Game do
-  let(:game) do
-    Game.new('2005-02-02', 'Modern Warfare', true, '2012-01-01')
-  end
+  context '#can_be_archived when called' do
+    it 'should return false if last played date is within 2 years and published more than 10 years ago' do
+      game = Game.new('2010-03-10', 'yes', '2022-03-21')
+      result = game.can_be_archived?
 
-  it 'sets the last_played_at, name, multiplayer, publish_date' do
-    expect(game.name).to eq 'Modern Warfare'
-    expect(game.multiplayer).to eq true
-    expect(game.publish_date).to eq Date.parse('2005-02-02')
-    expect(game.last_played_at).to eq Date.parse('2012-01-01')
-  end
+      expect(result).to eq(false)
+    end
 
-  it 'returns true if the game was last played more than 2 years ago' do
-    game = Game.new('2005-02-02', 'Modern Warfare', true, '2012-01-01')
-    expect(game.can_be_archived?).to eq true
-  end
+    it 'should return true if last played date is more than 2 years and published more than 10 years ago' do
+      game = Game.new('2005-01-15', 'yes', '2019-01-01')
+      result = game.can_be_archived?
 
-  it 'sets the archived attribute to true' do
-    game = Game.new('2005-02-02', 'Modern Warfare', true, '2012-01-01')
-    game.move_to_archive
-    expect(game.archived).to eq true
-  end
-
-  it 'sets the author' do
-    author = Author.new('John Doe')
-    game.author = author
-    expect(game.author).to eq author
-  end
-
-  it 'adds the game to the author items' do
-    author = Author.new('John Doe')
-    game.author = author
-    expect(author.games).to include game
+      expect(result).to eq(true)
+    end
   end
 end

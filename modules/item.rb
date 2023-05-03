@@ -1,17 +1,29 @@
-class Item
-  attr_reader :id, :author, :label, :genre, :source, :publish_date, :archived
+require 'date'
 
-  def initialize(id, publish_date, archived: false)
-    @id = id
+class Item
+  attr_accessor :genre, :author, :label, :publish_date, :archived
+  attr_reader :id
+
+  def initialize(publish_date)
+    @id = Random.rand(1..1000)
     @publish_date = publish_date
-    @archived = archived
+    @archived = false
+    @label = label
   end
 
   def can_be_archived?
-    @publish_date > 10
+    date = Date._parse(@publish_date)
+    publish_year = Date.today.year - date[:year]
+    publish_year > 10
   end
 
   def move_to_archive
-    @archived = true if can_be_archived?
+    @archived = can_be_archived?
+  end
+
+  def add_author(author)
+    @author = author
+    author.add_item(self) unless author.items.include?(self)
   end
 end
+ 

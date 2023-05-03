@@ -1,17 +1,15 @@
 require_relative 'spec_helper'
 
-describe 'Autor Class:' do
+describe Author do
   before :each do
-    @author = Author.new('Yismake', 'Worku')
+    @new_author = Author.new('Steven', 'Grace')
   end
-
-  context 'New Author Class:' do
-    it 'should have the following attributes (first name, last name, and id)' do
-      expect(@author.first_name).to eql 'Yismake'
-      expect(@author.last_name).to eql 'Worku'
+  describe 'The Author class' do
+    it 'returns the correct first name' do
+      expect(@new_author.first_name).to eql 'Steven'
     end
-    it 'should be an instance of the class Author' do
-      expect(@author).to be_instance_of Author
+    it 'returns the correct last name' do
+      expect(@new_author.last_name).to eql 'Grace'
     end
   end
 end

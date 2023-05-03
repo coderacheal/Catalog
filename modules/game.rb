@@ -1,34 +1,16 @@
-require_relative './item'
-require 'json'
+require_relative 'item'
+require 'date'
 
 class Game < Item
-  attr_reader :name, :multiplayer, :last_played_at
+  attr_accessor :multiplayer, :last_played_at
 
-  def initialize(publish_date, name, multiplayer, last_played_at = '2020-01-01', author = nil)
-    super(publish_date)
-    @name = name
+  def initialize(publish_date, multiplayer, last_played_at)
     @multiplayer = multiplayer
-    @last_played_at = Date.parse(last_played_at)
-    @author = author
-  end
-
-  def author=(author)
-    @author = author
-    author.games << self unless author.games.include?(self)
+    @last_played_at = last_played_at
+    super(publish_date)
   end
 
   def can_be_archived?
-    Date.parse(@last_played_at) < Date.today.prev_year(2) && super
-  end
-
-  def to_json(*arg)
-    {
-      JSON.create_id => self.class.name,
-      'a' => [publish_date, name, multiplayer, last_played_at, author]
-    }.to_json(*arg)
-  end
-
-  def self.json_create(object)
-    new(*object['a'])
+    DateTime.now.year - Date.parse(@last_played_at).year > 2 && super()
   end
 end
