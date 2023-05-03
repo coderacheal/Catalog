@@ -2,6 +2,7 @@ require_relative '../modules/album'
 require_relative '../modules/item'
 require_relative '../modules/genre'
 require_relative '../modules/label'
+# require_relative 'spec_helper'
 
 describe MusicAlbum do
   let(:label) do

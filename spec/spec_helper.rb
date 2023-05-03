@@ -1,0 +1,6 @@
+require_relative '../modules/genre'
+require_relative '../modules/album'
+require_relative '../modules/author'
+require_relative '../modules/item'
+require_relative '../modules/game'
+require_relative '../modules/genre'
