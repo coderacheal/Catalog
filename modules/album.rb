@@ -1,16 +1,18 @@
-require_relative 'item'
-
+# rubocop:disable Metrics/ParameterLists
+require_relative './item'
 class Album < Item
   attr_accessor :on_spotify
 
-  def initialize(publish_date, on_spotify)
-    super(publish_date)
+  def initialize(id, genre, author, source, label, published_date,
+                 on_spotify)
+    super(id, genre, author, source, label, published_date)
     @on_spotify = on_spotify
   end
 
-  private
-
   def can_be_archived?
-    super && @on_spotify
+    return true if super && @on_spotify == true
+
+    false
   end
 end
+# rubocop:enable Metrics/ParameterLists
