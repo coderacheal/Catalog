@@ -1,8 +1,6 @@
 require_relative '../modules/genre'
 require_relative '../modules/album'
 require_relative '../modules/label'
-require_relative 'spec_helper'
-# require_relative 'spec_helper'
 
 describe Genre do
   let(:label) do
