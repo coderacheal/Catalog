@@ -1,24 +1,16 @@
-require_relative './item'
+require_relative 'item'
+require 'date'
 
 class Game < Item
-  attr_reader :name, :multiplayer, :last_played_at
+  attr_accessor :multiplayer, :last_played_at
 
-  def initialize(name:, multiplayer:, last_played_at:, author: nil, **args)
-    super(**args)
-    @name = name
+  def initialize(publish_date, multiplayer, last_played_at)
     @multiplayer = multiplayer
     @last_played_at = last_played_at
-    @author = author
+    super(publish_date)
   end
-
-  def author=(author)
-    @author = author
-    author.games << self unless author.games.include?(self)
-  end
-
-  private
 
   def can_be_archived?
-    Date.parse(@last_played_at) < Date.today.prev_year(2) && super
+    DateTime.now.year - Date.parse(@last_played_at).year > 2 && super()
   end
 end

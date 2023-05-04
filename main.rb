@@ -1,21 +1,14 @@
-require_relative './modules/app'
+require_relative './app/app'
 
-def main
+class Main
   app = App.new
-  app.program_title
-  option = ''
 
-  exit_program = lambda {
-    puts 'BYE!!! SEE YOU WHEN YOU HAVE NEW THINGS TO ARCHIVE!'
-    exit
-  }
+  key = ''
 
-  while option != '0'
-    app.all_options
-    option = gets.chomp
-    app.execute_option unless option == '0'
+  until key == '10'
+    app.show_menu
+    key = gets.chomp
+    app.run(key) unless key == '10'
   end
-  exit_program.call
+  puts 'Thanks for using app'
 end
-
-main
