@@ -3,7 +3,6 @@ require_relative '../modules/item'
 require_relative '../modules/genre'
 require_relative '../modules/label'
 
-
 describe MusicAlbum do
   let(:label) do
     Label.new(nil, 'Mavins', 'Red')
