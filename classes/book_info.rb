@@ -48,7 +48,6 @@ class BookData
     end
   end
 
-
   def load_label(label_arr)
     file_path = './data/labels.json'
     return unless File.size?(file_path)

@@ -2,7 +2,6 @@ require_relative '../classes/author'
 require_relative '../classes/item'
 
 describe Author do
- 
   before :each do
     @author1 = Author.new 'Racheal', 'Appiah'
     @author2 = Author.new 'Crispin', 'Bigizi'
@@ -25,7 +24,7 @@ describe Author do
     end
   end
 
-  
+
   describe 'add_item method test' do
     it 'should add new author item' do
       @author1.add_item(@new_item)

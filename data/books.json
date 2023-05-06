@@ -2,92 +2,29 @@
   {
     "id": 929,
     "publish_date": "2023-02-12",
-    "publisher": "Publisher Chris",
+    "publisher": "Ama",
     "cover_state": "bad",
     "label_id": 889
   },
   {
     "id": 444,
     "publish_date": "2023-05-12",
-    "publisher": "Publisher tyron",
+    "publisher": "Kofi",
     "cover_state": "good",
     "label_id": 605
   },
   {
     "id": 618,
     "publish_date": "2023-03-14",
-    "publisher": "Publisher Valerie",
+    "publisher": "Osei",
     "cover_state": "bad",
     "label_id": 674
   },
   {
-    "id": 741,
-    "publish_date": "2023-09-25",
-    "publisher": "Publisher Claris",
+    "id": 43,
+    "publish_date": "2023-05-06",
+    "publisher": "Universal Group",
     "cover_state": "good",
-    "label_id": 909
-  },
-  {
-    "id": 829,
-    "publish_date": "23/04/2023",
-    "publisher": "Publisher Larissa",
-    "cover_state": "bad",
-    "label_id": 587
-  },
-  {
-    "id": 817,
-    "publish_date": "2023-05-05",
-    "publisher": "Publisher Chris",
-    "cover_state": "good ",
-    "label_id": 394
-  },
-  {
-    "id": 147,
-    "publish_date": "2023-05-05",
-    "publisher": "Publisher ",
-    "cover_state": "bad",
-    "label_id": 570
-  },
-  {
-    "id": 564,
-    "publish_date": "2023-05-05",
-    "publisher": "Publisher chria",
-    "cover_state": "bad ",
-    "label_id": 1145
-  },
-  {
-    "id": 409,
-    "publish_date": "2023-05-05",
-    "publisher": "Ama",
-    "cover_state": "good",
-    "label_id": 655
-  },
-  {
-    "id": 929,
-    "publish_date": "2023-05-06",
-    "publisher": "Ama",
-    "cover_state": "goog",
-    "label_id": 436
-  },
-  {
-    "id": 599,
-    "publish_date": "2023-05-06",
-    "publisher": "Ama",
-    "cover_state": "bad",
-    "label_id": 526
-  },
-  {
-    "id": 408,
-    "publish_date": "2023-05-06",
-    "publisher": "A",
-    "cover_state": "a",
-    "label_id": 610
-  },
-  {
-    "id": 658,
-    "publish_date": "2023-05-06",
-    "publisher": "a",
-    "cover_state": "a",
-    "label_id": 1941
+    "label_id": 317
   }
 ]

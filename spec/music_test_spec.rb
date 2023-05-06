@@ -28,6 +28,5 @@ describe MusicAlbum do
       expect(@music_album_three.move_to_archive).to eq true
       expect(@music_album_three.archived).to eq true
     end
-
   end
 end

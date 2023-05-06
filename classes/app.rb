@@ -44,8 +44,11 @@ class App
 
   def selection(choice)
     methods = [
-      method(:list_all_books), method(:list_music_albums), method(:gamelist), method(:list_all_genres), method(:list_all_labels),
-      method(:list_authors), method(:add_book), method(:add_music_albums), method(:create_game), method(:quit_app)
+      method(:list_all_books), method(:list_music_albums),
+      method(:gamelist), method(:list_all_genres),
+      method(:list_all_labels), method(:list_authors),
+      method(:add_book), method(:add_music_albums),
+      method(:create_game), method(:quit_program)
     ]
 
     (1..10).include?(choice) && methods[choice - 1].call
@@ -157,7 +160,7 @@ class App
     @game_actions.list_authors
   end
 
-  def quit_app
+  def quit_program
     @game_actions.save_games
     @game_actions.save_authors
     puts 'SEE YOU SOON WHEN YOU HAVE MORE THINGS TO ARCHIVE!!!'
