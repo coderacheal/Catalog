@@ -1,0 +1,44 @@
+[
+  {
+    "id": 929,
+    "publish_date": "2023-02-12",
+    "publisher": "Ama",
+    "cover_state": "bad",
+    "label_id": 889
+  },
+  {
+    "id": 444,
+    "publish_date": "2023-05-12",
+    "publisher": "Kofi",
+    "cover_state": "good",
+    "label_id": 605
+  },
+  {
+    "id": 618,
+    "publish_date": "2023-03-14",
+    "publisher": "Osei",
+    "cover_state": "bad",
+    "label_id": 674
+  },
+  {
+    "id": 43,
+    "publish_date": "2023-05-06",
+    "publisher": "Universal Group",
+    "cover_state": "good",
+    "label_id": 317
+  },
+  {
+    "id": 291,
+    "publish_date": "2023-05-06",
+    "publisher": "Disney",
+    "cover_state": "good",
+    "label_id": 447
+  },
+  {
+    "id": 168,
+    "publish_date": "2023-05-06",
+    "publisher": "Habasm",
+    "cover_state": "good",
+    "label_id": 169
+  }
+]

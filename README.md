@@ -1,20 +1,20 @@
-# OOP-School-Library
+# Catalog Project
 <a name="readme-top"></a>
 
 
 <div align="center">
   <br/>
 
-  <h3><b>OOP-School-Library</b></h3>
+  <h3><b>Catalog.</b></h3>
 
 </div>
 
 
 # 📗 Table of Contents
 
-- [OOP-School-Library](#oop-school-library)
+- [Catalog](#catalog)
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[OOP-School-Library\] ](#-oop-school-library-)
+- [📖 \[Catalog\] ](#-catalog-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
@@ -26,10 +26,11 @@
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments  --\>](#-acknowledgments----)
   - [📝 License ](#-license-)
 
-# 📖 [OOP-School-Library] <a name="about-project"></a>
-**[OOP-School-Library]** uses OOP to create a school library
+# 📖 [Catalog] <a name="about-project"></a>
+**[Catalog]** uses OOP to create a catalog of things I own
 <!-- ## 🛠 Built With <a name="built-with"></a> -->
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -38,7 +39,6 @@
   <summary>Client</summary> -->
 <ul>
   <li><a href="https://www.ruby-lang.org/en/">RUBY</a></li>
-
 </ul>
 <!-- </details> -->
 
@@ -66,16 +66,16 @@ To get a local copy up and running, follow these steps.
 ### Setup
 
 Clone this repository to your desired folder:
-https://github.com/coderacheal/OOP-School-Library.git
+https://github.com/coderacheal/Catalog.git
  Example commands:
 
 ```sh
-  cd OOP-School-Library
+  cd Catalog
 ```
 
 ### Install
 
-Install this project with:
+Install this project with
 
 ` cd my-project
   - Run bundle install
@@ -84,16 +84,25 @@ Install this project with:
 
 - Run `Ruby + filename`.
 
+Video Presentation
+[Video Link here](https://drive.google.com/file/d/1TNaMKYGhFpPJW8yeP2DaY7UNCLG5AKDw/view?usp=sharing)
+
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Racheal Appiah-kubi**
 
 - GitHub: [@coderacheal](https://github.com/coderacheal)
 - LinkedIn: [racheal-appiah-kubi](https://www.linkedin.com/in/racheal-appiah-kubi/)
 
-👤 **Christian Hakizimana**
+👤 **Bigizi Nduwayo Crispin**
 
-- GitHub: [@githubhandle](https://github.com/hakichris)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/hakichris)
+- GitHub: [@githubhandle](https://github.com/bigizi)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/bigizi)
+  
+👤 **HABASM**
+
+- GitHub: [@githubhandle](https://github.com/habasm)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/habasm)
 
 
 
@@ -101,7 +110,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add library books for all types of readers]**
+- [ ] **[Add a graphical user interface]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -120,9 +129,9 @@ If you like this project please give it a start and share it with your friends.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a> -->
+## 🙏 Acknowledgments <a name="acknowledgements"></a> -->
 
-<!-- I would like to appreciate[Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer. -->
+I would like to appreciate [Microverse](https://www.microverse.org/) for providing the resources and the platform for us to be a Professional full-stack developer
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
