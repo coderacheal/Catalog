@@ -1,13 +1,16 @@
-class Genre
-  attr_accessor :id, :name, :items
+require_relative 'item'
 
-  def initialize(id, name)
-    @id = id || rand(1..1000)
+class Genre
+  attr_reader :items
+  attr_accessor :name
+
+  def initialize(name)
+    @id = Random.rand(1..1000)
     @name = name
     @items = []
   end
 
-  def add_items(item)
+  def add_item(item)
     @items << item
     item.genre = self
   end
