@@ -24,7 +24,6 @@ describe Game do
     end
   end
 
-
   describe 'Published date date check' do
     it 'returns the correct value for publish date' do
       expect(@game.publish_date).to eq '2021-05-05'

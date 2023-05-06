@@ -8,7 +8,6 @@ describe Author do
     @new_item = Item.new '1775-09-07'
   end
 
-
   describe 'initialization of a new author' do
     it 'takes three parameters and returns 2 author objects' do
       expect(@author1).to be_an_instance_of Author
@@ -23,7 +22,6 @@ describe Author do
       expect(@author2.last_name).to eql 'Bigizi'
     end
   end
-
 
   describe 'add_item method test' do
     it 'should add new author item' do
