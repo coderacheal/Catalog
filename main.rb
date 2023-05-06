@@ -1,14 +1,10 @@
-require_relative './app/app'
+require_relative './classes/app'
 
-class Main
-  app = App.new
-
-  key = ''
-
-  until key == '10'
-    app.show_menu
-    key = gets.chomp
-    app.run(key) unless key == '10'
+def main
+  start = App.new
+  loop do
+    start.start
   end
-  puts 'Thanks for using app'
 end
+
+main

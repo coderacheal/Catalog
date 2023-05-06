@@ -1,19 +1,39 @@
-require_relative 'spec_helper'
+require_relative '../classes/games'
+require_relative '../classes/item'
 
 describe Game do
-  context '#can_be_archived when called' do
-    it 'should return false if last played date is within 2 years and published more than 10 years ago' do
-      game = Game.new('2010-03-10', 'yes', '2022-03-21')
-      result = game.can_be_archived?
+  before :each do
+    @game = Game.new true, '2021-05-05', '2023-04-01'
+  end
 
-      expect(result).to eq(false)
+  describe 'Create a new game object' do
+    it 'Takes 3 arguments and return the game object' do
+      expect(@game).to be_an_instance_of(Game)
     end
+  end
 
-    it 'should return true if last played date is more than 2 years and published more than 10 years ago' do
-      game = Game.new('2005-01-15', 'yes', '2019-01-01')
-      result = game.can_be_archived?
+  describe 'Multiplayer input testing' do
+    it 'returns the correct value for Multiplayer' do
+      expect(@game.multiplayer).to eq(true)
+    end
+  end
 
-      expect(result).to eq(true)
+  describe 'Last played date check' do
+    it 'returns the correct value for last played date' do
+      expect(@game.last_played_at).to eq '2023-04-01'
+    end
+  end
+
+
+  describe 'Published date date check' do
+    it 'returns the correct value for publish date' do
+      expect(@game.publish_date).to eq '2021-05-05'
+    end
+  end
+
+  describe 'Test for can_be_archived? method' do
+    it 'Checks if the game can be archived or not ' do
+      expect(@game.can_be_archived?).to eq(false)
     end
   end
 end

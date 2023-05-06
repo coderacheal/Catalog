@@ -38,6 +38,7 @@ create table Authors (
   foreign key(id) references item(id)
 )
 
+
 CREATE TABLE books(
   id SERIAL  primary key 
   publish_date DATE,

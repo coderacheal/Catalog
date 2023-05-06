@@ -1,32 +1,3 @@
-# require 'date'
-
-# class Item
-#   attr_accessor :genre, :author, :label, :publish_date, :archived
-#   attr_reader :id
-
-#   def initialize(publish_date)
-#     @id = Random.rand(1..1000)
-#     @publish_date = publish_date
-#     @archived = false
-#     @label = label
-#   end
-
-#   def can_be_archived?
-#     date = Date._parse(@publish_date)
-#     publish_year = Date.today.year - date[:year]
-#     publish_year > 10
-#   end
-
-#   def move_to_archive
-#     @archived = can_be_archived?
-#   end
-
-#   def add_author(author)
-#     @author = author
-#     author.add_item(self) unless author.items.include?(self)
-#   end
-# end
-
 require_relative './genre'
 require_relative './source'
 require_relative './author'
@@ -36,8 +7,6 @@ require 'json'
 
 class Item
   attr_accessor :publish_date, :archived, :id, :genre, :source, :author, :label
-
-  # convert publish_date to a date format
 
   def initialize(publish_date = Time.new.strftime('%Y-%m-%d'), archived) # rubocop:disable Style/OptionalArguments
     @id = Random.rand(1..1000)
@@ -55,11 +24,6 @@ class Item
     source.items << self unless source.items.include?(self)
   end
 
-  ##
-  # This function adds the current item to the author's list of items if it is not already included.
-  # Args:
-  #   author: The parameter "author" is a variable that represents an instance of the Author class. It
-  # is passed as an argument to the "add_author" method.
   def add_author(author)
     @author = author
     author.items << self unless author.items.include?(self)
@@ -70,9 +34,6 @@ class Item
     label.items << self unless label.items.include?(self)
   end
 
-  ##
-  # This Ruby function checks if an item can be archived based on its publish date being more than 10
-  # years ago.
   def can_be_archived?
     @publish_date.to_i < Date.today.year - 10
   end
@@ -81,7 +42,6 @@ class Item
     @archived = true if can_be_archived?
   end
 
-  # Convert object to json
   def to_json(*_args)
     genre_id = (@genre.id if defined? @genre)
     JSON.generate({
@@ -92,7 +52,6 @@ class Item
                   })
   end
 
-  # Convert json string to object
   def self.from_json(string)
     data = JSON.parse(string)
     obj = new(data['publish_date'], archived: data['archived'])
