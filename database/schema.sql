@@ -52,3 +52,9 @@ CREATE TABLE labels(
   title varchar(50),
   color varchar(50)
 ) 
+
+CREATE INDEX idx_genre_id ON item (genre_id ASC)
+CREATE INDEX idx_author_id ON item (author_id ASC)
+CREATE INDEX idx_label_id ON item (label_id ASC)
+CREATE INDEX idx_item_id ON Authors (item_id ASC)
+
