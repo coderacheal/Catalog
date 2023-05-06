@@ -84,6 +84,9 @@ Install this project with
 
 - Run `Ruby + filename`.
 
+Video Presentation
+[Video Link here](https://drive.google.com/file/d/1TNaMKYGhFpPJW8yeP2DaY7UNCLG5AKDw/view?usp=sharing)
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Racheal Appiah-kubi**
@@ -107,8 +110,6 @@ Install this project with
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add item class]**
-- [ ] **[Add item associations]**
 - [ ] **[Add a graphical user interface]**
 
 
