@@ -95,7 +95,6 @@ class App
     book_data.load_book(@books, @labels)
     puts '========Current Books==========='
     puts "\nBook list(#{@books.length}):"
-    puts '--------------'
     return puts 'No books added yet!' if @books.empty?
 
     @books.each.with_index(1) do |book, index|
