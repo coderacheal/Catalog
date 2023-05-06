@@ -107,8 +107,6 @@ Install this project with
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add item class]**
-- [ ] **[Add item associations]**
 - [ ] **[Add a graphical user interface]**
 
 
